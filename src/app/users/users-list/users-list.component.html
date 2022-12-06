@@ -1,0 +1,8 @@
+
+<h1>User List</h1>
+<ul>
+    <li *ngFor="let user of userslist">{{user.name}}    <span style="margin-left: 20px; text-align: center;"> <span ><a [routerLink]="['..', 'view', user.id]">VIEW</a> |</span>
+        <span><a [routerLink]="['..', 'edit', user.id]">EDIT</a> |</span>
+        <span><a [routerLink]="['..', 'delete', user.id]">DELETE</a></span></span>
+    </li>
+</ul>
